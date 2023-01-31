@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind-CSS CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                },
+            },
+        };
+    </script>
+    <!-- daisyUI CDN Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>Top-Five-Players</title>
+    <!------------Google Font------------>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!------------banner section------------>
+    <div class="hero min-h-screen bg-sky-200">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="./images/mbappe.png" class="w-1/2 h-1/2 rounded-lg shadow-2xl" />
+            <div class="w-1/2">
+                <h1 class="text-5xl font-bold">Top Five Players !!!</h1>
+                <p class="py-6">Football is the world’s most popular ball game in numbers of participants
+                    and spectators. Simple in its principal rules and essential equipment, the sport can be
+                    played
+                    almost anywhere...</p>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <!-- Players & Busget Section -->
+        <section class="players-budget-section">
+            <div class="players-budget-container w-9/12 mx-auto pt-8 pb-20">
+                <div class="players-container grid lg:grid-cols-12 gap-4 sm:grid-cols-1 md:grid-cols-1">
+                    <!-- Players Container -->
+                    <div class="players-container grid col-span-9 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- Players 1 -->
+                        <div class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none">
+                            <figure>
+                                <img src="./images/messi.png" alt="Shoes" class="w-full h-40" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title justify-center font-bold text-white">
+                                    Lionel Messi
+                                </h2>
+                                <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                                </div>
+                                <div class="card-actions justify-center">
+                                    <button class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                                        onclick='handlerOnSelectPlayer(this)'>
+                                        SELECT
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -->
+                        <!-- Players 2 -->
+                        <div class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none">
+                            <figure>
+                                <img src="./images/neymar.png" alt="Shoes" class="w-full h-40" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title justify-center font-bold text-white">
+                                    Neymar Jr
+                                </h2>
+                                <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                                </div>
+                                <div class="card-actions justify-center">
+                                    <button class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                                        onclick='handlerOnSelectPlayer(this)'>
+                                        SELECT
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- Player 3 -->
+                        <div class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none">
+                            <figure>
+                                <img src="./images/mbappe.png" alt="Shoes" class="w-full h-40" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title justify-center font-bold text-white">
+                                    Kylian Mbappé
+                                </h2>
+                                <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                                </div>
+                                <div class="card-actions justify-center">
+                                    <button class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                                        onclick='handlerOnSelectPlayer(this)'>
+                                        SELECT
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- Player 4 -->
+                        <div class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none">
+                            <figure>
+                                <img src="./images/ramos.png" alt="Shoes" class="w-full h-40" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title justify-center font-bold text-white">
+                                    Sergio Ramos
+                                </h2>
+                                <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                                </div>
+                                <div class="card-actions justify-center">
+                                    <button class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                                        onclick='handlerOnSelectPlayer(this)'>
+                                        SELECT
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- Player 5 -->
+                        <div class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none">
+                            <figure>
+                                <img src="./images/sanches.png" alt="Shoes" class="w-full h-40" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title justify-center font-bold text-white">
+                                    Renato Sanches
+                                </h2>
+                                <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                                </div>
+                                <div class="card-actions justify-center">
+                                    <button class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                                        onclick='handlerOnSelectPlayer(this)'>
+                                        SELECT
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- Players 6 -->
+                        <div class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none">
+                            <figure>
+                                <img src="./images/vitinha.png" alt="Shoes" class="w-full h-40" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title justify-center font-bold text-white">
+                                    Vítor Machado
+                                </h2>
+                                <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                                </div>
+                                <div class="card-actions justify-center">
+                                    <button class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                                        onclick='handlerOnSelectPlayer(this)'>
+                                        SELECT
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- Players 7 -->
+                        <div class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none">
+                            <figure>
+                                <img src="./images/donnarumma.png" alt="Shoes" class="w-full h-40" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title justify-center font-bold text-white">
+                                    Donnarumma
+                                </h2>
+                                <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                                    <span>9 Goals</span><span>.</span><span>20Assist</span>
+                                </div>
+                                <div class="card-actions justify-center">
+                                    <button class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                                        onclick='handlerOnSelectPlayer(this)'>
+                                        SELECT
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- Players 8 -->
+                        <div class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none">
+                            <figure>
+                                <img src="./images/marquinhos.png" alt="Shoes" class="w-full h-40" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title justify-center font-bold text-white">
+                                    Marquinhos
+                                </h2>
+                                <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                                </div>
+                                <div class="card-actions justify-center">
+                                    <button class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                                        onclick='handlerOnSelectPlayer(this)'>
+                                        SELECT
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- Players 9 -->
+                        <div class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none">
+                            <figure>
+                                <img src="./images/verratti.png" alt="Shoes" class="w-full h-40" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title justify-center font-bold text-white">
+                                    Marco Verratti
+                                </h2>
+                                <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                                </div>
+                                <div class="card-actions justify-center">
+                                    <button class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                                        onclick='handlerOnSelectPlayer(this)'>
+                                        SELECT
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+
+                    </div>
+
+                    <!-- Selected Player's List & Budget Table Container -->
+                    <div
+                        class="players-list-budget-container grid grid-cols-1 gap-4 h-4/6 col-span-9 sm:col-span-9 md:col-span-9 lg:col-span-3">
+                        <!-- Selected Player's List  -->
+                        <div class="selected-players-container">
+                            <div class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none">
+                                <figure>
+                                    <h1
+                                        class="text-white py-3 font-semibold lg:text-3xl border-b-4 border-b-orange-500">
+                                        Selected - V
+                                    </h1>
+                                </figure>
+                                <div class="card-body">
+                                    <ol id="selected-players"
+                                        class="list-decimal text-white px-1 md:px-40 lg:px-4 xl:px-8 lg:font-semibold lg:text-base">
+                                        <!-- <li><span class="text-white my-4">Neymar Jr</span></li>
+                        <li><span class="text-white my-4">Kylian Mbappé</span></li>
+                        <li><span class="text-white my-4">Sergio Ramos</span></li>
+                        <li><span class="text-white my-4">Renato Sanches</span></li>
+                        <li><span class="text-white my-4">Vítor Machado</span></li> -->
+
+                                    </ol>
+                                    <p id="display-id"
+                                        class="text-white bg-red-700 text-lg lg:text-base font-semibold font w-1/2 text-center py-1 rounded-xl mx-auto hidden ">
+                                        List is full</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Budget Table -->
+                        <div class="budget-container">
+                            <div class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none">
+                                <figure>
+                                    <h1
+                                        class="text-white py-3 font-semibold lg:text-3xl border-b-4 border-b-orange-500">
+                                        Budget
+                                    </h1>
+                                </figure>
+                                <div class="card-body">
+                                    <div class="flex justify-start">
+                                        <label class="text-white inline md:text-lg lg:text-sm xl:text-lg">Per
+                                            Player:</label>
+                                        <input type="number" name="" id="input-player-budget" placeholder="$ budget"
+                                            class="inline-block ml-2 w-6/12 h-8 bg-neutral-900 text-white border-2 border-white text-center" />
+                                    </div>
+                                    <div class="my-4">
+                                        <button class="bg-sky-800 text-white rounded-none w-full  h-8 mb-4"
+                                            onclick="handlerOnCalculatePlayerExpenses()">
+                                            Calculate
+                                        </button>
+                                        <p class="text-white md:text-lg lg:text-sm xl:text-lg text-center">
+                                            Player Expenses: <span class="sm:ml-24 md:ml-24 lg:ml-0 mr-1">$</span><span
+                                                id="players-total-expenses">00</span>
+                                        </p>
+                                    </div>
+                                    <div class="">
+                                        <div class="flex">
+                                            <label
+                                                class="text-white inline md:text-lg lg:text-sm xl:text-lg">Manager:</label>
+                                            <input type="number" name="" id="input-manager-budget"
+                                                placeholder="$ budget"
+                                                class="inline-block w-6/12 h-8 bg-neutral-900 text-white border-2 border-white text-center mb-4 ml-3 " />
+                                        </div>
+                                        <div class="flex">
+                                            <label
+                                                class="text-white inline md:text-lg lg:text-sm xl:text-lg">Coach:</label>
+                                            <input type="number" name="" id="input-coach-budget" placeholder="$ budget"
+                                                class="inline-block w-6/12 h-8 bg-neutral-900 text-white border-2 border-white text-center ml-7 sm:ml-7 md:ml-8 lg:ml-8" />
+                                        </div>
+                                        <div class="my-4 ">
+                                            <button class="bg-sky-800 text-white rounded-none w-full h-8"
+                                                onclick="handlerOnCalculateTotalBudget()">
+                                                Calculate Total
+                                            </button>
+                                        </div>
+                                        <p class="text-white md:text-lg lg:text-sm xl:text-lg text-center">
+                                            Total: <span class=" sm:ml-24 md:ml-24 lg:ml-12 mr-1">$</span><span
+                                                id="total-budget">00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!------------footer section------------>
+    <footer class="bg-sky-600 mt-4">
+        <p class="text-center text-white pt-4">Copyright@ 2022 All Rights Reserved</p>
+        <div class="text-center pb-4">
+            <a class="text-info fs-2 pe-2 text-decoration-none" href="https://www.pinterest.com/" target="_blank">
+                <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <a class="text-info fs-2 pe-2 text-decoration-none" href="https://twitter.com/?lang=en" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="text-info fs-2 pe-2 text-decoration-none" href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
